@@ -5,7 +5,7 @@
 
 This lab uses a Bash startup script (User Data) to automatically configure an EC2 instance when it launches.
 
-The script installs httpd, creates a simple website using HTML and CSS, and creates the required directories and files for the lab.
+The script installs httpd, creates a simple website using HTML and CSS, and creates the required directories and files for the lab. Creates 4 dummy log files, and the copies for the website files in the `backups` directory.
 
 
 Installs and starts `apache`
@@ -18,17 +18,7 @@ Creates project folders:
 - backups
 - logs
 
-Creates 4 dummy log files
-Creates backups of the website files
-Hosts the website through HTTP
-Directory Structure
 
-/project
-
-content
-utils
-credentials
-backups
 logs
 
 # Execution
