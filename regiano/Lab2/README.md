@@ -25,10 +25,13 @@ logs
 For validation I SSH'd into the EC2 instance, and checked if the directories were created properly
 
 EC2 instance - SSH 
-![alt text](<ec2 ssh instance-1.png>)
+<img width="924" height="580" alt="ec2 ssh instance" src="https://github.com/user-attachments/assets/79752749-56e0-4eec-9df5-fbea808a5ff8" />
+
 
 EC2 instance - AWS console
-![alt text](<ec2 aws console-1.png>)
+<img width="1576" height="130" alt="ec2 aws console" src="https://github.com/user-attachments/assets/049bd168-043b-4737-9f7b-062069d5eeee" />
+
 
 EC2 - webpage
-![alt text](<ec2 webpage-1.png>)
+<img width="1839" height="960" alt="ec2 webpage" src="https://github.com/user-attachments/assets/4bc7a637-25e0-40bc-ab90-f5cdabe83b98" />
+
