@@ -12,7 +12,7 @@ echo "Copying website setup script to VM..."
 
 scp -i "${KEY_NAME}.pem" \
     user-data.sh \
-    ubuntu@$PUBLIC_IP:/home/ubuntu/
+    @$PUBLIC_IP:/home/ubuntu/
 
 echo "Script copied."
 

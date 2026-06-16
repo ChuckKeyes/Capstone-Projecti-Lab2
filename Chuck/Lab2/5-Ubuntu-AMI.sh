@@ -1,22 +1,13 @@
 #!/bin/bash
-
-# 5. Find Ubuntu AMI
-
 set -e
 
 source ./1a-variables.sh
 
-echo "Finding latest Ubuntu 22.04 AMI..."
+echo "Using Amazon Linux 2023 AMI..."
 
-AMI_ID=$(aws ec2 describe-images \
-  --region "$REGION" \
-  --owners 099720109477 \
-  --filters "Name=name,Values=ubuntu/images/hvm-ssd-gp3/ubuntu-jammy-22.04-amd64-server-*" \
-  --query 'Images | sort_by(@, &CreationDate)[-1].ImageId' \
-  --output text)
+AMI_ID="ami-0d71b1617df761282"
 
 echo "$AMI_ID" > ami_id.txt
 
-echo "Ubuntu AMI found:"
+echo "AMI saved:"
 echo "$AMI_ID"
-

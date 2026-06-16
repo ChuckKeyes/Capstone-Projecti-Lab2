@@ -19,6 +19,7 @@ INSTANCE_ID=$(aws ec2 run-instances \
   --security-group-ids "$WEB_SG_ID" \
   --subnet-id "$SUBNET_ID" \
   --associate-public-ip-address \
+  --user-data file://user-data.sh \
   --query 'Instances[0].InstanceId' \
   --output text)
 
@@ -28,5 +29,6 @@ echo "VM created:"
 echo "$INSTANCE_ID"
 
 echo "Waiting for VM to start..."
-sleep 30
+sleep 130
 
+echo "VM should be ready now."

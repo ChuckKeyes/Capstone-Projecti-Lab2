@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo cp /tmp/index.html /var/www/html/
 
 # 9. SSH into VM
 
@@ -11,7 +11,7 @@ PUBLIC_IP=$(cat public_ip.txt)
 
 echo "Connecting to VM..."
 
-ssh -i japan-keypair.pem ubuntu@$PUBLIC_IP
+ssh -i bread-keypair.pem ec2-user@13.231.225.210
 
 sudo cp /tmp/index.html /var/www/html/
 sudo cp -r \
