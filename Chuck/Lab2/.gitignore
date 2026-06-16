@@ -217,3 +217,11 @@ Armageddon-Lab4/New-AWSCLI-keys
 **/New-AWSCLI-keys
 .obsidian/workspace
 .obsidian/cache
+########################## CapStone Project Lab 2 ##########################
+
+*.pem
+web_sg_id.txt
+instance_id.txt
+public_ip.txt
+ami_id.txt
+bread-dns.json

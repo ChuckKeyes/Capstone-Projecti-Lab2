@@ -1,3 +1,10 @@
+#!/bin/bash
+set -e
+
+source ./1a-variables.sh
+
+PUBLIC_IP=$(cat public_ip.txt)
+
 cat > bread-dns.json <<EOF
 {
   "Changes": [
@@ -17,3 +24,6 @@ cat > bread-dns.json <<EOF
   ]
 }
 EOF
+
+echo "bread-dns.json created."
+

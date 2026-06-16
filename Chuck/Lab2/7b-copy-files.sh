@@ -1,16 +1,17 @@
-scp -i japan-keypair.pem -r corn-bread \
-ubuntu@$PUBLIC_IP:/tmp/
+#!/bin/bash
+set -e
 
-scp -i japan-keypair.pem -r wheat-bread \
-ubuntu@$PUBLIC_IP:/tmp/
+source ./1a-variables.sh
 
-scp -i japan-keypair.pem -r white-bread \
-ubuntu@$PUBLIC_IP:/tmp/
+PUBLIC_IP=$(cat public_ip.txt)
 
+echo "Copying website files to VM..."
 
-scp -i japan-keypair.pem -r \
-index.html \
-white-bread \
-wheat-bread \
-corn-bread \
-ubuntu@$PUBLIC_IP:/tmp/
+scp -i "${KEY_NAME}.pem" -r \
+    index.html \
+    white-bread \
+    wheat-bread \
+    corn-bread \
+    ubuntu@$PUBLIC_IP:/tmp/
+
+echo "Files copied."

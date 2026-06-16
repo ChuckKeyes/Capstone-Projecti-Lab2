@@ -11,15 +11,15 @@ FQDN="${SUBDOMAIN}.${DOMAIN_NAME}"
 VPC_ID="vpc-0f08193db2f851cd5"
 SUBNET_ID="subnet-0a146cfd4d6e145f8"
 KEY_NAME="japan-keypair"
-MY_IP="73.107.137.224/32"
+MY_IP="46.183.108.130/32"
 SG_NAME="bread-website-sg"
 
 AMI_ID=""
 WEB_SG_ID=""
 INSTANCE_ID=""
 PUBLIC_IP=""
+WEB_SG_ID=""
 
-clear
 
 # Region
 REGION="ap-northeast-1"
