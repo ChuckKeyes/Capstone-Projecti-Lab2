@@ -14,7 +14,11 @@ mkdir /project/credentials
 mkdir /project/backups
 mkdir /project/logs
 
-# the 4 dummy files
+# the 4 dummy files and placeholder files in content, utils, and credentials
+touch /project/content/spreadsheet.txt
+touch /project/utils/extra.txt
+touch /project/credentials/key.txt
+
 touch /project/logs/logs.txt
 touch /project/logs/files.txt
 touch /project/logs/test.txt
