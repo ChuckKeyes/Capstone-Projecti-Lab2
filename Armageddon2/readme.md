@@ -12,7 +12,7 @@ Creating directories - content, utils, and credentials
 
 Need  dummy logs
 
-Placeholder files- Notes txt, nonsensetxt, bullish txt
+Placeholder files- Notes txt, nonsense txt, bullish txt
 
 Move copies of server files in backup folder
 
