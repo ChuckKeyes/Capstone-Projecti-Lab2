@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo cp /tmp/index.html /var/www/html/
+
 
 # 9. SSH into VM
 
@@ -11,16 +11,19 @@ PUBLIC_IP=$(cat public_ip.txt)
 
 echo "Connecting to VM..."
 
-ssh -i bread-keypair.pem ec2-user@13.231.225.210
+ssh -i bread-keypair.pem ec2-user@"$PUBLIC_IP" << 'EOF'
+
+sudo cp /tmp/index.html /usr/share/nginx/html/
 
 sudo cp /tmp/index.html /var/www/html/
 sudo cp -r \
     /tmp/white-bread \
     /tmp/wheat-bread \
     /tmp/corn-bread \
-    /var/www/html/
+    /tmp/css \
+    /usr/share/nginx/html/
 
-ls -R /var/www/html
+ls -R /usr/share/nginx/html/
 
 sleep 5
 

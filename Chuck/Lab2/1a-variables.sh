@@ -17,7 +17,7 @@ SUBNET_ID="subnet-0a146cfd4d6e145f8"
 KEY_NAME="bread-keypair"
 
 # Your IP
-MY_IP="46.183.108.130/32"
+MY_IP="0.0.0.0/0"
 
 # Names for resources to be created
 SG_NAME="bread-website-sg"

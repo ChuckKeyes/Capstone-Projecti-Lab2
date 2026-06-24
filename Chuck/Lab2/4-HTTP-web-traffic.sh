@@ -27,3 +27,13 @@ aws ec2 authorize-security-group-ingress \
   --cidr "0.0.0.0/0"
 
 echo "HTTPS rule added."
+
+
+echo "Adding ICMP (ping) rule..."
+
+aws ec2 authorize-security-group-ingress \
+  --region "$REGION" \
+  --group-id "$WEB_SG_ID" \
+  --ip-permissions IpProtocol=icmp,FromPort=-1,ToPort=-1,IpRanges='[{CidrIp=0.0.0.0/0}]'
+
+echo "ICMP rule added."

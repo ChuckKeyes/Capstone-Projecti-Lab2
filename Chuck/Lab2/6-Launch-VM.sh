@@ -25,10 +25,18 @@ INSTANCE_ID=$(aws ec2 run-instances \
 
 echo "$INSTANCE_ID" > instance_id.txt
 
+
+echo "Waiting for EC2 status checks..."
+
+aws ec2 wait instance-status-ok \
+  --region "$REGION" \
+  --instance-ids "$INSTANCE_ID"
+
+echo "Instance passed AWS status checks."
+
 echo "VM created:"
 echo "$INSTANCE_ID"
 
-echo "Waiting for VM to start..."
-sleep 130
+
 
 echo "VM should be ready now."

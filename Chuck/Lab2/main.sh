@@ -32,6 +32,9 @@ bash ./6-Launch-VM.sh
 echo "Step 7 - Get public IP"
 bash ./7-Get-public-IP.sh
 
+echo "Step 7a -Make a json files"
+bash ./7a-make-json.sh
+
 echo "Step 8 - Copy website files"
 bash ./7b-copy-files.sh
 

@@ -12,6 +12,7 @@ scp -i "${KEY_NAME}.pem" -r \
     white-bread \
     wheat-bread \
     corn-bread \
+    css \
     ec2-user@$PUBLIC_IP:/tmp/
 
 echo "Files copied."

@@ -1,0 +1,19 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5dc;
+    margin: 0;
+    padding-bottom: 120px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d9d7c3;
+    border-top: 3px solid brown;
+    padding: 10px;
+}
+</style>

@@ -1,0 +1,22 @@
+<!-- CONTACT / FOOTER -->
+
+<footer style="
+    margin-top:300px;
+    padding:15px;
+    background-color:#d9d7c3;
+    border-top:3px solid brown;
+">
+
+<h2>Contact</h2>
+
+<p>
+Charles Keyes Sr.<br>
+Cloud Engineer Student<br>
+Email: chuck37080@yahoo.com
+</p>
+
+<p>
+© 2026 Chuck's Bread Recipe Collection
+</p>
+
+</footer>
